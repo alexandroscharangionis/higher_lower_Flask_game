@@ -16,11 +16,14 @@ def home():
 @app.route("/<int:number>")
 def check_number(number):
     if number > secret_number:
-        return "<h2>Too high! Try again.</h2>"
+        return """<h2>Too high! Try again.</h2>
+        <img src='https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif'/>"""
     elif number < secret_number:
-        return "<h2>Too low! Try again.</h2>"
+        return """<h2>Too low! Try again.</h2>
+        <img src='https://media.giphy.com/media/jD4DwBtqPXRXa/giphy.gif'/>"""
     else:
-        return "<h2>Correct! You won.</h2>"
+        return """<h2>Correct! You won.</h2>
+        <img src='https://media.giphy.com/media/4T7e4DmcrP9du/giphy.gif'/>"""
 
 
 if __name__ == "__main__":
