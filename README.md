@@ -1,1 +1,1 @@
-# higher_lower_Flask_game
+# Higher-lower number guessing game using Flask
